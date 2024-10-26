@@ -50,11 +50,11 @@ double sinCosFunc(double x)
 int main()
 {
     double res_1 = integralTrapezoidEps(0., 1., 0.000001, sinFunc);
-    // double res_2 = integralTrapezoidEps(0., 1., 0.000001, cosFunc);
-    // double res_3 = integralTrapezoidEps(0., 1., 0.000001, sinCosFunc);
+    double res_2 = integralTrapezoidEps(0., 1., 0.000001, cosFunc);
+    double res_3 = integralTrapezoidEps(0., 1., 0.000001, sinCosFunc);
     printf("Integral sin(x) on [0; 1] reange = %lf\n", res_1);
-    // printf("Integral cos(x) on [0; 1] reange = %lf\n", res_2);
-    // printf("Integral sin(x) * cos(x) on [0; 1] reange = %lf\n", res_3);
+    printf("Integral cos(x) on [0; 1] reange = %lf\n", res_2);
+    printf("Integral sin(x) * cos(x) on [0; 1] reange = %lf\n", res_3);
 
     return 0;
 }
